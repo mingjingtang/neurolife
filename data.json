@@ -1,0 +1,13 @@
+{
+    "Username": "user123",
+    "Email": "user@123",
+    "Password": "hi1234",
+    "Blood Pressure":
+    {
+         "Systolic":"110",
+         "Diastolic": "70"
+},
+"Temperature":"98.7",
+"Ph":"7.6",
+"Disease":"1"
+}
