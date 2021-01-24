@@ -22,6 +22,7 @@ class dailyReading extends React.Component {
 
   render() {
     const { activeItem } = this.state;
+    const { dailyData } = this.props;
 
     return (
       <Container>
@@ -87,7 +88,7 @@ class dailyReading extends React.Component {
                         <Card.Header>Blood Pressure</Card.Header>
                         <Card.Meta>
                           <Header as="h4" color="red">
-                            Abnormal
+                            {dailyData.bloodPressure}
                           </Header>
                         </Card.Meta>
                         <Card.Description>130/89mm Hg</Card.Description>
@@ -100,7 +101,7 @@ class dailyReading extends React.Component {
                         <Card.Header>Temperature</Card.Header>
                         <Card.Meta>
                           <Header as="h4" color="green">
-                            Normal
+                            {dailyData.temperature}
                           </Header>
                         </Card.Meta>
                         <Card.Description>37.5 C</Card.Description>
@@ -115,7 +116,7 @@ class dailyReading extends React.Component {
                         <Card.Header>Resting Heart Rate</Card.Header>
                         <Card.Meta>
                           <Header as="h4" color="green">
-                            Normal
+                            {dailyData.heartRate}
                           </Header>
                         </Card.Meta>
                         <Card.Description>90 BPM</Card.Description>
@@ -128,7 +129,7 @@ class dailyReading extends React.Component {
                         <Card.Header>pH Level</Card.Header>
                         <Card.Meta>
                           <Header as="h4" color="green">
-                            Normal
+                            {dailyData.pH}
                           </Header>
                         </Card.Meta>
                         <Card.Description>6.5pH</Card.Description>
