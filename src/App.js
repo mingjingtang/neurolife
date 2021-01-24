@@ -7,17 +7,25 @@ import FormSignup from "./components/FormSignup";
 class App extends React.Component {
   state = {
     isLoggedIn: false,
-    // dailyData: [],
+    dailyData: [],
   };
 
-  //   async componentDidMount() {}
+  async componentDidMount() {
+    var myObj = {
+      bloodPressure: "Abnormal",
+      temperature: "Normal",
+      heartRate: "normal",
+      pH: "normal",
+    };
+    this.setState({ dailyData: myObj });
+  }
 
   submitForm() {
     this.setState({ isLoggedIn: true });
   }
 
   render() {
-    const { isLoggedIn } = this.state;
+    const { isLoggedIn, dailyData } = this.state;
 
     return (
       <main>
@@ -36,7 +44,7 @@ class App extends React.Component {
             </div>{" "}
           </div>
         ) : (
-          <DailyReading />
+          <DailyReading dailyData={dailyData} />
         )}
       </main>
     );
