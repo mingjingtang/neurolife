@@ -14,7 +14,7 @@ const Form = () => {
       <div className='form-container'>
         <span className='close-btn'>×</span>
         <div className='form-content-left'>
-          <img className='form-img' src='https://medoxremedies.com/wp-content/uploads/2020/03/neurology-1024x665-1.jpg' alt='spaceship' />
+          <img className='form-img' src='https://www.myhealthtalent.com/getasset/a4fb6627-ce16-4259-acdb-552f4af40c6b/' alt='spaceship' />
         </div>
         {!isSubmitted ? (
           <FormSignup submitForm={submitForm} />
